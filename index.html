@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>component library</title>
 </head>
 <body>
@@ -21,6 +22,7 @@
     <h5>Heading5</h5>
     <h6>Heading6</h6>
     <p>This is normal text. This is free flowing and wrap at the end like a paragraph.</p>
+    <p>This paragraph will have <strong>bold</strong> text</p>
     <small>This is relatively smaller text</small>
 
     <hr>
@@ -28,37 +30,39 @@
     <h2>@container</h2>
 
     <h3>#fluid container</h3>
-    <div>This is a fluid container and it will go till the end of page</div>
+    <div class="container">This is a fluid container and it will go till the end of page</div>
     <h3>#centered container</h3>
-    <div>This is a centered container and it will go till the specified width</div>
+    <div class="container container-center">This is a centered container and it will go till the specified width</div>
 
     <hr>
 
     <h2>@links</h2>
-    <a href="http://google.com">Google</a>
+    <a class="link link-primary" href="http://google.com">Primary Link</a>
+    <a class="link link-secondary" href="http://google.com">Secondary Link</a>
 
     <hr>
 
     <h2>@Lists</h2>
 
     <h3>#unordered list</h3>
-
-    <ul>
+    <p>This list has no bullets</p>
+    <ul class="non-bullet-list">
         <li>One</li>
         <li>Two</li>
         <li>Three</li>
     </ul>
 
     <h3>#unordered inline list</h3>
+    <p>This list has no bullets</p>
 
-    <ul>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+    <ul class="non-bullet-list">
+        <li class="inline-list-items">One</li>
+        <li class="inline-list-items">Two</li>
+        <li class="inline-list-items">Three</li>
     </ul>
 
-    <h3>#Ordered List</h3>
-    <ol>
+    <h3>#Reverese Ordered List</h3>
+    <ol reversed>
         <li>One</li>
         <li>Two</li>
         <li>Three</li>
@@ -68,17 +72,17 @@
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>iAmDiksha</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">iAmDiksha</div>
+        <ul class="non-bullet-list nav-pills">
+            <li class="inline-list-items">
+                <a class="link link-active" href="/">Home</a>
             </li>
-            <li>
-                <a href="/products">Products</a>
+            <li class="inline-list-items">
+                <a class="link" href="/products">Products</a>
             </li>
-            <li>
-                <a href="/about">About</a>
+            <li class="inline-list-items">
+                <a class="link" href="/about">About</a>
             </li>
         </ul>
     </nav>
@@ -87,9 +91,9 @@
 
     <h2>@header</h2>
 
-    <header>
-        <img src="./images/girl.png" alt="">
-        <h1>heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-img" src="./images/girl.png" alt="">
+        <h1 class="hero-heading">heading inside hero</h1>
     </header>
 
     <hr>
